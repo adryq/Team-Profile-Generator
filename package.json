@@ -1,0 +1,22 @@
+{
+  "name": "team-profile-generator",
+  "version": "1.0.0",
+  "description": "Command-line app that takes in information about employees on a software engineering team and generates a HTML webpage that displays summaries for each person",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adryq/Team-Profile-Generator.git"
+  },
+  "author": "Adry Quezada",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/adryq/Team-Profile-Generator/issues"
+  },
+  "homepage": "https://github.com/adryq/Team-Profile-Generator#readme",
+  "dependencies": {
+    "inquirer": "^9.1.2"
+  }
+}
