@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/adryq/Team-Profile-Generator#readme",
   "dependencies": {
-    "inquirer": "^9.1.2"
+    "inquirer": "^7.0.4"
   }
 }
