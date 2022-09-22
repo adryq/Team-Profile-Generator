@@ -1,6 +1,7 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 const generatePage = require('./src/generatePage');
+// const Manager = require('./lib/manager');
 
 
 const promptUser = () => {
@@ -26,12 +27,12 @@ const promptUser = () => {
       {
           type: 'input',
           name: 'eid',
-          message: "What is your manager's employee ID?",
+          message: "What is the manager's employee ID?",
           validate: eidInput => {
               if (eidInput){
                   return true;
               } else {
-                  console.log("Please enter your manager's employee ID")
+                  console.log("Please enter the manager's employee ID")
                   return false;
               }
           }
@@ -39,12 +40,12 @@ const promptUser = () => {
       {
         type: 'input',
         name: 'email',
-        message: "What is your manager's email?",
+        message: "What is the manager's email?",
         validate: emailInput => {
             if (emailInput){
                 return true;
             } else {
-                console.log("Please enter your manager's email")
+                console.log("Please enter the manager's email")
                 return false;
             }
         }
@@ -52,24 +53,24 @@ const promptUser = () => {
     {
         type: 'input',
         name: 'officeNumber',
-        message: "What is your manager's office number?",
+        message: "What is the manager's office number?",
         validate: officeNumberInput => {
             if (officeNumberInput){
                 return true;
             } else {
-                console.log("Please enter your manager's office number")
+                console.log("Please enter the manager's office number")
                 return false;
             }
         }
     }   
-    ]);
-    
+    ])
   };
-  promptUser() 
+promptUser();
+ 
 
 const generateHTML = generatePage();
 
 fs.writeFile('./dist/index.html', generateHTML, err => {
   if (err) throw err;
-
+  
 });

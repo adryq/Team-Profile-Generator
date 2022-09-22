@@ -3,3 +3,11 @@
     text-align: center;
     background-color: rgb(108, 26, 26);
 }
+.card {
+    height: 500px;
+    width: 500px;
+    border-radius: 10px;
+    
+  }
+  
+ 

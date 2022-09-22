@@ -1,4 +1,4 @@
-module.exports = () => {
+module.exports = generatePage  => {
     return `
     <!DOCTYPE html>
     <html lang="en">
@@ -13,6 +13,8 @@ module.exports = () => {
     </head>
     <body>
     <h1 class="team">My Team</h1>
+    <div class="card">
+    </div>
     </body>
     </html>
     `;
