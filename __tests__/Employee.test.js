@@ -5,7 +5,7 @@ test('if created employee object', () => {
     const name = 'Adry'
     const eid = '9'
     const email = 'adryq95@gmail.com'
-
+    
     const employee = new Employee(name, eid, email)
 
     expect(employee.name).toEqual('Adry');
