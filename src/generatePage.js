@@ -1,5 +1,54 @@
-module.exports = generatePage  => {
-    return `
+const managerSection = (manager) => {
+  return `
+    <div class="card">
+    <div class="card-header">
+      <h1>${manager.name}</h1>
+      <p>Manager</p>
+    </div>
+    <div class="card-body">
+    <p>Employee ID:${manager.eid}</p>
+    <p>Email:${manager.email}</p>
+    <p>Office Number:${manager.officeNumber}</p>
+    </div>
+  
+  `
+}
+
+const engineerSection = (engineer) => {
+  return `
+    <div class="card">
+    <div class="card-header">
+      <h1>${engineer.name}</h1>
+      <p>Engineer</p>
+    </div>
+    <div class="card-body">
+    <p>Employee ID:${engineer.eid}</p>
+    <p>Email:${engineer.email}</p>
+    <p>GitHub:${engineer.github}</p>
+    </div>
+  
+  `;
+}
+
+const internSection = (intern) => {
+  return `
+    <div class="card">
+    <div class="card-header">
+      <h1>${intern.name}</h1>
+      <p>Intern</p>
+    </div>
+    <div class="card-body">
+    <p>Employee ID:${intern.eid}</p>
+    <p>Email:${intern.email}</p>
+    <p>School:${intern.school}</p>
+    </div>
+  
+  `;
+}
+
+
+const generateHTML = (employeeGroup) => {
+  return `
     <!DOCTYPE html>
     <html lang="en">
     
@@ -13,9 +62,44 @@ module.exports = generatePage  => {
     </head>
     <body>
     <h1 class="team">My Team</h1>
-    <div class="card">
-    </div>
+    <section class="section">
+  ${employeeGroup}
+    </section>
     </body>
     </html>
     `;
-  };
+
+}
+
+
+
+
+module.exports = generatePage = (data) => {
+  
+  let employeeCards = [];
+  
+  for (let i=0; i < data.length; i++){
+    
+    const employee = data[i];
+    const role = employee.getRole();
+
+    if (role === 'Manager'){
+      const managerCard = managerSection(employee);
+      employeeCards.push(managerCard);
+    }
+    if (role === 'Engineer'){
+      const engineerCard = engineerSection(employee);
+      employeeCards.push(engineerCard);
+    }
+    if (role === 'Intern'){
+      const internCard = internSection(employee);
+      employeeCards.push(internCard);
+    }
+    
+  }
+
+  const employeeGroup = employeeCards.join('');
+
+  const HTMLpage = generateHTML(employeeGroup);
+  return HTMLpage;
+}

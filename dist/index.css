@@ -1,13 +1,14 @@
 .team{
     color: white;
     text-align: center;
-    background-color: rgb(108, 26, 26);
+    background-color: rgb(143, 44, 44);
 }
-.card {
-    height: 500px;
-    width: 500px;
-    border-radius: 10px;
-    
-  }
-  
+
+.section{
+  justify-content: center;
+  display: flex;
  
+}
+
+
+
