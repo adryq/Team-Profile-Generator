@@ -2,13 +2,10 @@
     color: white;
     text-align: center;
     background-color: rgb(143, 44, 44);
+    font-size: 30px;
+    letter-spacing: 2px;
 }
 
-.section{
-  justify-content: center;
-  display: flex;
- 
-}
 
 
 

@@ -1,48 +1,48 @@
 const managerSection = (manager) => {
   return `
-    <div class="card">
-    <div class="card-header">
+  <div class="bg-red-100">
+    <div class="card-header text-center text-lg font-bold">
       <h1>${manager.name}</h1>
       <p>Manager</p>
     </div>
-    <div class="card-body">
+    <div class="card-body pl-3">
     <p>Employee ID:${manager.eid}</p>
-    <p>Email:${manager.email}</p>
+    <p class="email"> Email: <a href= "mailto: ${manager.email}"> ${manager.email}</a></p>
     <p>Office Number:${manager.officeNumber}</p>
     </div>
-  
+    </div>
   `
 }
 
 const engineerSection = (engineer) => {
   return `
-    <div class="card">
-    <div class="card-header">
+  <div class="bg-red-100">
+    <div class="card-header text-center text-lg font-bold">
       <h1>${engineer.name}</h1>
       <p>Engineer</p>
     </div>
-    <div class="card-body">
+    <div class="card-body pl-3">
     <p>Employee ID:${engineer.eid}</p>
-    <p>Email:${engineer.email}</p>
-    <p>GitHub:${engineer.github}</p>
+    <p class="email"> Email: <a href= "mailto: ${engineer.email}"> ${engineer.email}</a></p>
+    <p class="github"> GitHub: <a href= "https://github.com/${engineer.github}">${engineer.github}</a></p>
     </div>
-  
+    </div>
   `;
 }
 
 const internSection = (intern) => {
   return `
-    <div class="card">
-    <div class="card-header">
+    <div class="bg-red-100">
+    <div class="card-header text-center text-lg font-bold">
       <h1>${intern.name}</h1>
       <p>Intern</p>
     </div>
-    <div class="card-body">
+    <div class="card-body pl-3">
     <p>Employee ID:${intern.eid}</p>
-    <p>Email:${intern.email}</p>
+    <p class="email"> Email: <a href= "mailto: ${intern.email}"> ${intern.email}</a></p>
     <p>School:${intern.school}</p>
     </div>
-  
+    </div>
   `;
 }
 
@@ -57,12 +57,12 @@ const generateHTML = (employeeGroup) => {
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
       <link rel="stylesheet" href="./index.css">
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <script src="https://cdn.tailwindcss.com"></script>
       <title>Team Profile</title>
     </head>
     <body>
     <h1 class="team">My Team</h1>
-    <section class="section">
+    <section class="grid grid-cols-3 gap-4 p-3 dropshadow-lg">
   ${employeeGroup}
     </section>
     </body>
