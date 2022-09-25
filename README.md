@@ -25,5 +25,9 @@ WHEN I decide to finish building my team
 THEN I exit the application, and the HTML is generated
 
 Tests Ran:
-https://user-images.githubusercontent.com/101481761/192125495-ba426b30-1849-4c01-940e-0d3f66a83503.mov
+
+
+
+https://user-images.githubusercontent.com/101481761/192125557-40857c46-a02c-4a57-97c6-cc8900c8bd47.mp4
+
 
