@@ -35,4 +35,8 @@ Walkthrough Video:
 
 https://user-images.githubusercontent.com/101481761/192125625-fe366468-cbf7-4d9b-aa7a-28d75f161af0.mp4
 
+Screenshot of Team Built:
+
+<img width="1241" alt="Screen Shot 2022-09-24 at 10 30 23 PM" src="https://user-images.githubusercontent.com/101481761/192125664-29f1514a-cbe0-491d-990d-231f433c63f8.png">
+
 
