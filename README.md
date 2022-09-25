@@ -30,4 +30,9 @@ Tests Ran:
 
 https://user-images.githubusercontent.com/101481761/192125557-40857c46-a02c-4a57-97c6-cc8900c8bd47.mp4
 
+Walkthrough Video:
+
+
+https://user-images.githubusercontent.com/101481761/192125625-fe366468-cbf7-4d9b-aa7a-28d75f161af0.mp4
+
 
